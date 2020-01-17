@@ -1,4 +1,5 @@
 # wg-blog-vue
+<<<<<<< HEAD
 
 > A Vue.js project
 
@@ -28,3 +29,6 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+=======
+blog前端项目
+>>>>>>> bdd982c9be844f66fd49625f71a5e4e972e60ca8
