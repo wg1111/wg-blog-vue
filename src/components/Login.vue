@@ -1,7 +1,7 @@
 <template>
   <body id="poster">
 <el-form class="login_container"  :model="loginForm" ref="loginForm"
-         :rules="rules" label-width="0px">
+         :rules="rules" label-width="0px" v-loading="loading">
   <h3 class="login_title">系统登录</h3>
   <el-form-item prop="username">
     <el-input type="text" v-model="loginForm.username" placeholder="请输入用户名"></el-input>

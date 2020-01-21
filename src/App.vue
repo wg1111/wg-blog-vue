@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <!--<img src="./assets/icon.jpg">-->
-    <router-view/>
+    <router-view/>  <!--显示组件的地方，由routes里的path和component来找到对应的组件-->
   </div>
 </template>
 
