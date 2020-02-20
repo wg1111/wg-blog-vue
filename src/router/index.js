@@ -20,7 +20,10 @@ export default new Router({
     {
       path: '/index',
       name: 'AppIndex',
-      component: AppIndex
+      component: AppIndex,
+      meta: {
+        requireAuth: true
+      }
     },
     {
       path:'/register',
@@ -30,7 +33,10 @@ export default new Router({
     {
       path:'/registerSuccess',
       name:'RegisterSuccess',
-      component:RegisterSuccess
+      component:RegisterSuccess,
+      meta: {
+        requireAuth: true
+      }
     },
       ]
 })

@@ -77,6 +77,7 @@
         this.makeCode(this.identifyCodes,4)
       },
       login(data){
+        var _this = this
         if(this.loginForm.code.toLowerCase() !== this.identifyCode.toLowerCase()){
           this.$message.error("验证码错误")
           this.refreshCode()
@@ -91,6 +92,11 @@
                 })
                 .then(rep => {
                   if(rep.data.code === 200){
+                    //后端返回成功代码后执行login方法，将loginForm中的值赋给store中的user对象
+                    _this.$store.commit('login',_this.loginForm)
+                    //获取登录前的路径跳转，如果没有的话就跳转至首页
+                    var path = this.$router.query.redirect
+                    this.$router.repalce({path:path === '/' || path === undefined ? 'index' : path})
                     this.$router.replace({path:'/index'})
                   }else{
                     this.$alert(rep.data.message,'提示',{
