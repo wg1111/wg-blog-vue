@@ -32,3 +32,11 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 =======
 blog前端项目
 >>>>>>> bdd982c9be844f66fd49625f71a5e4e972e60ca8
+
+项目进度：
+
+2020.01.09------确定前端框架，搭建项目
+
+2020.01.17------登录页面开发；反向代理实现
+
+2020.01.21------注册页面开发；实现邮箱验证功能
